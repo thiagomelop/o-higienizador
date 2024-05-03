@@ -1,0 +1,47 @@
+body {
+  position: relative;
+  background-image: url(../img/FundoDePano.png);
+  background-color: #bfbdb9;
+  padding: 0 4em;
+}
+.fundo-geral {
+  background-color: rgba(191, 189, 185, 0.400);
+  background-position: center;
+  /* background-size:contain; */
+  background-repeat: repeat;
+}
+
+          /* CABEÇALHO */
+
+.cabecalho {
+  position: fixed;
+  width: 100%;
+  height: 3em;
+  left: 0;
+  background-color: grey;
+}
+
+.cabecalho-layout {
+  padding: 0 4em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  height: 3em;
+}
+
+.cabecalho-itens a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: .9em;
+}
+
+          /*  INÍCIO */
+
+.layout-inicio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
