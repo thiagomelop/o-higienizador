@@ -4,6 +4,11 @@ body {
   background-color: #bfbdb9;
   padding: 0 4em;
 }
+
+.fundo-com-margin{
+  background-color: #858787;
+  margin: 0 1em;
+}
 .fundo-geral {
   background-color: rgba(191, 189, 185, 0.400);
   background-position: center;
@@ -37,11 +42,82 @@ body {
   font-size: .9em;
 }
 
-          /*  INÍCIO */
+          /*  SESSÃO INÍCIO */
 
 .layout-inicio {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 2em;
+}
+
+.inicio-esquerda {
+  flex-direction: column;
+  width: 100%;
   height: 100vh;
 }
+
+.logo-higienizador-inicio {
+  align-items: center;
+  text-align: center;
+  width: auto;
+}
+
+.imagem-logo-inicio {
+  margin-top: 10%;
+  width: 60%;
+  height: 70%;
+}
+
+.titulo-inicio h1{
+  font-size: 40px;
+  justify-content: space-around;
+  padding: 0 3em;
+  margin: .3em 0;
+  text-align: center;
+}
+
+.titulo-inicio p {
+  text-align: center;
+  font-size: 1.5em;
+  text-wrap: wrap;
+  margin-bottom: 1em;
+}
+
+.icones-inicio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icones {
+  margin-left: 1.5em;
+  width: 50px;
+  height: auto; 
+}
+
+#insta {
+  width: 65px;
+}
+
+.inicio-direita {
+  height: 100%;
+  width: 100%;
+}
+
+.fundo-sofa {
+  height: 100vh;
+  width: 100%;
+}
+
+
+          /* SESSÃO IMPACTO CLIENTE */
+
+.impacto-cliente {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
