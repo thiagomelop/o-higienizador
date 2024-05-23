@@ -9,10 +9,10 @@ body {
   background-color: #858787;
   margin: 0 1em;
 }
+
 .fundo-geral {
   background-color: rgba(191, 189, 185, 0.400);
   background-position: center;
-  /* background-size:contain; */
   background-repeat: repeat;
 }
 
@@ -24,6 +24,7 @@ body {
   height: 3em;
   left: 0;
   background-color: grey;
+  z-index: 1000;
 }
 
 .cabecalho-layout {
@@ -50,7 +51,7 @@ body {
   justify-content: center;
   width: 100%;
   height: 100vh;
-  margin-bottom: 2em;
+  padding-bottom: 2em;
 }
 
 .inicio-esquerda {
@@ -72,7 +73,7 @@ body {
 }
 
 .titulo-inicio h1{
-  font-size: 40px;
+  font-size: 3em;
   justify-content: space-around;
   padding: 0 3em;
   margin: .3em 0;
@@ -105,11 +106,11 @@ body {
 .inicio-direita {
   height: 100%;
   width: 100%;
-}
-
-.fundo-sofa {
-  height: 100vh;
-  width: 100%;
+  /* background-image: url('../img/sofa-bege.png'); */
+  background-image: linear-gradient(to bottom, rgba(233, 228, 222, 0) 75%, #AEADA8 100%, transparent), url(../img/sofa-bege.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
@@ -118,6 +119,129 @@ body {
 .impacto-cliente {
   position: relative;
   display: flex;
-  flex-direction: row;
+  width: 100%;
+  margin-bottom: 5em;
 }
 
+.img-fundo {
+  position: absolute;
+  width: 100%;
+  overflow: hidden
+}
+
+.bacteria-esquerda {
+  position: absolute;
+  top: -50px;
+  left: -200px;
+  width: 50%;
+}
+
+.bacteria-direita {
+  position: absolute;
+  top: -50px;
+  right: -200px;
+  width: 50%;
+}
+
+.fita-zebrada-direita {
+  position: absolute;
+  top: -100px;
+  right: -150px;
+  /* z-index: 1; */
+  width: 30%;
+}
+
+.fita-zebrada-esquerda {
+  position: relative;
+  bottom: -100px;
+  left: -150px;
+  /* z-index: 1; */
+  width: 30%;
+}
+
+.container {
+  /* z-index: 1000; */
+  padding: 0 2em;
+}
+
+.titulo-impacto-cliente {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  font-size: 1.8em;
+}
+
+.card-container {
+  display: flex;
+  gap: 1em;
+  padding: 3em;
+}
+
+.cards {
+  position: relative;
+}
+
+.cards img {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 0;
+}
+
+.cards p {
+  position: absolute;
+  bottom: 0;
+  padding: 2px;
+  background: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+  color: white; /* Cor do texto */
+  width: 100%;
+  text-align: center;
+}
+
+          /*  RESOLUÇÃO PROBLEMAS */
+
+.titulo-section {
+  display: flex;
+  justify-content: start;
+  font-size: 3em ;
+  margin:0 0 .5em 3em ;
+}
+
+.subtitulo-section {
+  /* display: flex;
+  justify-content: start; */
+  font-size: 1.5em ;
+  margin:0 0 0 6em ;
+}
+
+.pontos-negativos {
+  background-color: lightcoral;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  padding-bottom: 2em;
+}
+
+.negativo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.negativo p {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.seta-esquerda {
+  background-color: aqua;
+  transform: rotate(180deg);
+}
+
+.imagem-sofa-sujo {
+  width: 50%;
+  height: auto;
+}
